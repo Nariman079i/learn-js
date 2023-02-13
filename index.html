@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Main Page</h1>
+    <ul>
+        <li><a href="">url menu 1</a></li>
+        <li><a href="">url menu 2</a></li>
+        <li><a href="">url menu 3</a></li>
+        <li><a href="">url menu 4</a></li>
+    </ul>
+    <span>
+
+    </span>
+    <script>
+        window.document.body.style.background = "red";
+        window.document.body.style.background = "Green";
+        document.writeln(window.innerWidth);
+        document.head.title = "Hll";
+        
+        // document.writeln(window.document.head.title.toString);
+        // for (let i = 0; i< document.body.childNodes.length; i++){
+        //     document.writeln(document.body.childNodes[i]);
+        //     console.log(document.body.childNodes[i]);
+        // }
+        // for (let child of document.body.childNodes){
+        //     console.log(child)
+        // }
+        // document.body.childNodes.forEach((elem) => console.log(elem))
+        let html = document.documentElement;
+        let first = html.firstChild;
+        let last = html.lastChild;
+        console.log(first,last);
+        console.log(html.hasChildNodes());
+        let htmlchild = document.body.children;
+        for (child of htmlchild){
+            console.log(child.innerText);
+        }
+        console.log(htmlchild);
+
+        </script>
+</body>
+</html>
